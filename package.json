@@ -1,0 +1,21 @@
+{
+  "name": "sample-microservice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready Node.js Express microservice exposing health and Prometheus metrics",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "keywords": ["microservice","express","prometheus","metrics"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prom-client": "^14.0.1"
+  }
+}
