@@ -29,7 +29,7 @@ jobs:
 
       - name: Run Trivy Filesystem Scan
         # Use Trivy action to scan repository filesystem for vulnerabilities
-        uses: aquasecurity/trivy-action@v0.28.0
+        uses: aquasecurity/trivy-action@v0.19.0
         with:
           scan-type: fs
           scan-ref: .
@@ -64,7 +64,7 @@ jobs:
             holuphilix/sample-microservice:latest
 
       - name: Run Trivy Image Scan
-        uses: aquasecurity/trivy-action@v0.28.0
+        uses: aquasecurity/trivy-action@v0.19.0
         with:
           scan-type: image
           image-ref: holuphilix/sample-microservice:${{ github.sha }}
